@@ -1,13 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
+  margin: 50px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-font-stroke-color: red;
   -moz-osx-font-smoothing: grayscale;
+  font-style: oblique;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(246, 239, 239);
+  
 }
-
+image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.flex-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+
+button:focus, .btn:focus {
+  outline: none;
+}
+
+.header-footer {
+  height: 50px;
+  padding: 10px;
+  margin: 15px 0;
+  color:  rgb(246, 239, 239);
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+}
+
+.App-link {
+  color: #b92121;
+  text-decoration: none;
+}
+.App {
+  background: url(https://i.etsystatic.com/18325098/r/il/9430ff/1907189073/il_1588xN.1907189073_mzpf.jpg);
+}
+p {
+  font-size: 1.5rem;
+  color: rgb(246, 239, 239);
 }
