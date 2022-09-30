@@ -26,11 +26,11 @@ const EditAthlete = ({ setAthlete, userId }) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit =  (e) => {
         console.log("submitting");
         e.preventDefault();
         try {
-            let res = await axios.put(`http://localhost:8000/routes/athleteRoutes/${userId}`, formData);
+            let res =  axios.put(`http://localhost:8000/routes/athleteRoutes/${userId}`, formData);
             setFormData(initialState);
             setAthlete(res.data);
             navigate("/editprofile", { replace: true });

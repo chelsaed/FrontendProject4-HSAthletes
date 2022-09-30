@@ -1,5 +1,5 @@
 import React from 'react';
-//import './App.css';
+import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import AthleteGallery from './pages/AthleteGallery';
@@ -21,8 +21,8 @@ import axios from 'axios';
 
 
 
-async function App() {
-  let user = await userService.getUser1();
+ function App() {
+  let user = userService.getUser1();
   console.log(user)
   let userId = user._id;
   console.log(user);

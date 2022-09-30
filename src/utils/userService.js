@@ -2,9 +2,9 @@ import tokenService from './tokenService';
 
 const BASE_URL = 'http://localhost:8000/routes/userRoutes/';
 
-async function signup(user) {
+function signup(user) {
   console.log("user", user)
-    await fetch(BASE_URL + 'signup', {
+    fetch(BASE_URL + 'signup', {
     method: 'POST',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify(user)
@@ -21,8 +21,8 @@ async function signup(user) {
 
   
 }
-async function getUser1() { 
-  return await fetch('http://localhost:8000/routes/athleteRoutes/6327d0c3327a564e97e5c280', {
+ function getUser1() { 
+  return fetch('http://localhost:8000/routes/athleteRoutes/6327d0c3327a564e97e5c280', {
     method: 'GET',
     headers:{'Content-Type': 'application/json'},
     

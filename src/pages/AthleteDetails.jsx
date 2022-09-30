@@ -17,24 +17,28 @@ const AthleteDetails = ({props}) => {
          console.log(AthleteDetails)
          
   return (
-    
-  //   <div className="AthleteDetails" key={AthleteDetails?._id}>
-  //       <h1>{AthleteDetails?.name}</h1>
-  //  <div>
-  //   <h1>Athlete Details</h1>
 
-  //   <h2>{AthleteDetails?.sport}</h2>
-  //   <h2>{AthleteDetails?.position}</h2>
-  //   <h2>{AthleteDetails?.height}</h2>
-  //   <h2>{AthleteDetails?.weight}</h2>
-  //   </div>
+    <div className="athlete-details">
+    
+    <div className="AthleteDetails" key={athletes._id}>
+        <h1>{athletes.name}</h1>
+   <div>
+    <h1>Athlete Details</h1>
+
+    <h2>{athletes.sport}</h2>
+    <h2>{athletes.position}</h2>
+    <h2>{athletes.height}</h2>
+    <h2>{athletes.weight}</h2>
+    </div>
   
       
-  //   {/* <img src={AthleteDetails?.image} alt={AthleteDetails?.name}/> */}
-  //   </div>
-  <p> Hello </p>
+     <img src={athletes.image} alt={athletes.name}/> 
+    </div>
+ 
 
-  )
-  };
+    </div>
+  );
 
-export default AthleteDetails
+}
+
+export default AthleteDetails;
